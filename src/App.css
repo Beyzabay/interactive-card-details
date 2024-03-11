@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk');
+/* https://fonts.google.com/specimen/Space+Grotesk */
+.img-class{
+  width: -webkit-fill-available;
+  height: 100vh;
+  transform: scaleY(1.07);
+  position: relative;
+  /* dkt */
+  z-index: 0;
+}
+@media (max-width: 426px){
+  .img-class{
+    height: 50vh;
+  }
+}
+@media (max-width: 1024px){
+  .card-layout{
+    bottom: 43% !important;
+  }
+}
+@media (max-width: 600px){
+  .img-class{
+    width: 100vh;
+    height: 35vh;
+  }
+  .formDiv{
+    width: 100% !important;
+  }
+  .card-layout{
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 72% !important;
+    left: 3%;
+  }
+  .cardDivBack{
+    width: 66vw !important;
+    bottom: 0px !important;
+    right: 0px !important;
+    left: 2em;
+    top: -1em;
+  }
+  .cardDivFront{
+    width: 66vw !important;
+    bottom: 0px !important;
+    right: 0px !important;
+    left: 2em;
+    top: 6em;
+  }
+  .centeredDiv{
+    width: 100%;
+  }
+  .grid-two{
+    padding-right: 2em !important;
+    padding-left: 2em !important;
+    padding-top: 6em !important;
+  }
+  .divText{
+    left: 3em !important;
+    font-size: 2.8vw !important;
+    bottom: -5em !important;
+  }
+  .divNumber{
+    left: 2em !important;
+    bottom: -1em !important;
+    font-size: 4.8vw !important;
+  }
+  .divMonth{
+    left: 18em !important;
+    font-size: 2.8vw !important;
+    bottom: -5em !important;
+  }
+  .divCvc{
+    font-size: 2.8vw !important;
+    left: 73% !important;
+  }
+  .card-logo{
+    bottom: 33% !important;
+    left: 11% !important;
+    width: 10vw !important;
+    margin-left: 1vw;
+    margin-bottom: -3vw;
+  }
+}
+@media (max-width: 431px){
+  .divText{
+    bottom: -7em !important;
+    left: 3.5em !important;
+  }
+  .divMonth{
+    bottom: -7em !important;
+  }
+  .divNumber{
+    bottom: -2.4em !important;
+  }
+  .card-logo{
+    bottom: 20% !important;
+  }
+  .divCvc{
+    left: 77% !important;
+    top: 33% !important;
+  }
+}
+@media (max-width: 375px){
+  .card-logo {
+    bottom: 10% !important;
+}
+.divText{
+  bottom: -8em !important
+}
+.divMonth{
+  bottom: -8em !important;
+}
+}
+@media (max-width: 320px){
+  .card-logo {
+    bottom: 0% !important;
+    left: 14% !important;
+}
+.divNumber {
+  bottom: -3.4em !important;
+  left: 14% !important;
+}
+.divText {
+  bottom: -10em !important;
+  left: 14% !important;
+}
+.divMonth {
+  bottom: -10em !important;
+  left: 60% !important;
+}
+}
+
+.grid-layout{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.grid-two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.cardDivFront{
+  width: 22vmax;
+  position: absolute;
+  z-index: 9;
+  bottom: 14vmax;
+  right: 30%;
+}
+.divText{
+  position: absolute;
+  z-index: 99;
+  bottom: 120%;
+  font-family: serif;
+  color: white;
+  font-size: 1vmax;
+  margin-left: 1%;
+  left: -26%;
+}
+.divCvc{
+  position: absolute;
+    z-index: 99;
+    top: 38%;
+    left: 66%;
+    font-family: serif;
+    color: white;
+    font-size: 1vmax;
+    margin-left: 1%;
+}
+.divNumber{
+  position: absolute;
+  z-index: 99;
+  bottom: 140%;
+  left: -26%;
+  font-family: 'Space Grotesk';
+  color: white;
+  font-size: 1.7vmax;
+  margin-left: 1%;
+}
+.divMonth{
+  position: absolute;
+  z-index: 99;
+  bottom: 120%;
+  font-family: serif;
+  color: white;
+  font-size: 1vmax;
+  margin-left: 1%;
+  left: 43%;
+}
+.cardDivBack{
+  width: 22vmax;
+  z-index: 9;
+  position: relative;
+  bottom: 1vmax;
+  right: 11%;
+}
+.card-logo{
+  position: absolute;
+    z-index: 99;
+    bottom: 186%;
+    left: -22%;
+    width: 5vw;
+}
+.formClassDiv{
+  display: flex;
+  justify-content: center;
+}
+.formDiv{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.containerDiv{
+  display: flex;
+  justify-content: center;
+}
+.margin-setting{
+  margin-bottom: 1%;
+}
+.margin-setting{
+  margin-top: 5%;
+}
+input{
+  margin-bottom: 3% !important;
+  border-radius: 9px !important;
+  box-shadow: none;
+}
+input:focus{
+  border-color: hsl(278, 94%, 30%) !important;
+  box-shadow: none !important;
+
+}
+.div-label{
+  display: contents;
+}
+.div-label-cvc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3%;
+}
+.input-error{
+  border-color:hsl(0, 100%, 66%) !important;
+  box-shadow: none !important;
+}
+.error{
+  color: hsl(0, 100%, 66%) ;
+  font-family:'Space Grotesk';
+  font-size: 81%;
+  margin-top: 2%;
+}
+.labelClass {
+  font-family: 'Space Grotesk';
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(278, 68%, 11%);
+  letter-spacing: 4px;
+}
+::placeholder{
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+}
+.buttonLetter{
+  text-transform: lowercase;
+}
+
+.buttonLetter::first-letter{
+  text-transform: uppercase;
+}
+.button{
+  background-color: hsl(278, 68%, 11%) !important;
+  color: white !important;
+  font-family: 'Space Grotesk' !important;
+  margin-top: 4% !important;
+}
+.input-position{
+  margin-top: 1%;
+  display: flex;
+}
+.input-position-cvc{
+  margin-top: 1%;
+}
+.card-layout{
+  display: flex;
+  position: absolute;
+  z-index: 9;
+  bottom: 22%;
+  right: 40%;
+}
+.msgOne{
+  font-family: 'Space Grotesk';
+  font-size: 3.7vh;
+  font-weight: bolder;
+}
+.msgTwo{  
+  font-family: 'Space Grotesk';
+  color: #848484;
+  font-weight: 400;
+}
+.completeDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 7vh;
+}
+.msgDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
